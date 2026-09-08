@@ -17,46 +17,125 @@ Know exactly who changed what in your WordPress admin — options, Customizer, p
 
 **Plugin URL:** [https://douple.net/whochanged/](https://douple.net/whochanged/)
 **Docs:** [https://douple.net/whochanged/docs.html](https://douple.net/whochanged/docs.html)
+**Demo:** [https://douple.net/whochanged/demo.html](https://douple.net/whochanged/demo.html)
 **GitHub:** [https://github.com/thiendo/Wordpress-WhoChanged-Plugin](https://github.com/thiendo/Wordpress-WhoChanged-Plugin)
 **Support:** support@douple.net
 **Get WhoChanged PRO:** [https://checkout.freemius.com/plugin/35452/plan/58744/](https://checkout.freemius.com/plugin/35452/plan/58744/)
 
-**WhoChanged** is a lightweight activity log for WordPress that quietly watches the admin area and records every meaningful change: who did it, what changed, and when. When something breaks after an update or a client swears "I didn't touch anything," WhoChanged gives you the answer in seconds instead of hours.
+**WhoChanged** is a lightweight admin activity & audit log for WordPress. It quietly watches the admin area and records every meaningful change: who did it, what changed, and when — with clear before/after diffs.
 
-= What gets tracked =
+When something breaks after an update, a setting disappears, or a client swears “I didn’t touch anything,” WhoChanged gives you the answer in seconds instead of hours of guesswork.
 
-* **Settings & options** — before/after values for any option updated through `wp-admin`.
-* **Customizer** — every time a user saves changes in the Customizer.
-* **Plugins** — activation, deactivation, deletion and bulk updates.
-* **Users** — logins, failed login attempts, logouts and role changes.
-* **Content** — posts and comments moved to trash, restored, or permanently deleted.
-* **Navigation menus** — menu creation, updates and deletions.
-* **WooCommerce** — order deletions (when WooCommerce is active).
+= Features =
 
-= Why WhoChanged =
+* **Before/after diffs** — see exactly what the old and new values were, not just that something changed
+* **Settings & options** — track option updates made through `wp-admin`
+* **Customizer** — log Customizer saves with only the settings that actually changed
+* **Plugins** — activation, deactivation, deletion, installs and upgrades
+* **Users** — logins, failed login attempts, logouts and role changes
+* **Content** — posts and comments moved to trash, restored, or permanently deleted
+* **Navigation menus** — menu creation, updates and deletions
+* **WooCommerce** — order deletions (when WooCommerce is active)
+* **Filterable activity log** — search and filter by user, event type and date range
+* **Statistics dashboard** — charts for actions, users, trends and activity by hour of day
+* **Admin bar quick menu** — recent activity without leaving the page you are on
+* **CSV export** — download your activity log whenever you need it
+* **30-day activity history** on every Free install — no setup required
+* **Privacy-friendly by default** — log data stays in your own WordPress database
+* **Fully translatable** — ready for WordPress.org language packs
 
-* **Clear before/after diffs.** Don't just see *that* something changed — see exactly what the old and new values were.
-* **Built for teams.** Multiple admins and editors? Know exactly who is responsible for each change.
-* **Fast, filterable log.** Search and filter by user, event type and date range directly from the WordPress admin.
-* **CSV export.** Download your activity log as CSV whenever you need it.
-* **Privacy-friendly by default.** Data stays in your own database — nothing is sent to third parties.
-* **30-day activity history**, included on every install, no setup required.
+= Perfect for =
+
+* Agencies and freelancers managing client sites with multiple admins
+* Site owners who need a clear audit trail after unexplained changes
+* Teams that want accountability without a heavy security suite
+* Developers debugging “who changed this option?” moments
 
 = PRO features =
 
+More info at [https://douple.net/whochanged/](https://douple.net/whochanged/) — or [buy WhoChanged PRO](https://checkout.freemius.com/plugin/35452/plan/58744/).
+
 The Free plan tells you *what changed*. PRO helps you act on it, prove it, and get notified the moment it happens:
 
-* **Unlimited retention** — the Free plan keeps 30 days of history; PRO lets you keep logs for 60/90 days or forever, so nothing ages out before an audit.
-* **Excel (XLS) & PDF reports** — polished, client- and auditor-ready exports beyond the Free plan's CSV, including a one-click PDF export of the Statistics dashboard.
-* **Instant email alerts** — get notified the moment specific event types happen (theme switches, plugin installs, admin role changes).
-* **Role-based access control** — choose exactly which roles can view the activity log, and which roles are tracked in the first place. On Free, only Administrators can view logs and every user is tracked.
-* **One-click purge** — wipe the entire activity log whenever you need a clean slate.
+* **Configurable / unlimited retention** — Free keeps 30 days; PRO unlocks 60/90 days or forever so nothing ages out before an audit
+* **Excel (XLS) & PDF reports** — client- and auditor-ready exports beyond CSV, including a one-click PDF of the Statistics dashboard
+* **Instant email alerts** — get notified when specific event types happen (theme switches, plugin installs, admin role changes, and more)
+* **Role-based access control** — choose which roles can view the log, and which roles are tracked. On Free, only Administrators can view logs and every user is tracked
+* **One-click purge** — wipe the entire activity log when you need a clean slate
 
-Free is genuinely useful on its own — full event coverage, filtering, diffs and CSV export, forever. PRO is for teams and agencies that need longer history, professional reports, real-time alerts and fine-grained access control.
+Free is genuinely useful on its own — full event coverage, filtering, diffs, statistics and CSV export. PRO is for teams and agencies that need longer history, professional reports, real-time alerts and fine-grained access control.
 
-= Support =
+= Requirements =
 
-Found a bug or have a feature request? Please reach out through the plugin's support page. We read every report.
+* WordPress 6.0 or higher
+* PHP 7.4 or higher
+* WooCommerce is optional (only needed for WooCommerce-specific events such as order deletions)
+
+== Installation ==
+
+1. Upload the `whochanged` folder to `/wp-content/plugins/`, or install from **Plugins → Add New**.
+2. Activate the plugin through the Plugins screen in WordPress.
+3. Go to **WhoChanged** in the admin sidebar to view the activity log.
+4. (Optional) Visit **WhoChanged → Settings** to review the 30-day Free retention window, or upgrade to PRO for longer retention, email alerts and role-based access.
+5. Full documentation: [https://douple.net/whochanged/docs.html](https://douple.net/whochanged/docs.html)
+
+== Frequently Asked Questions ==
+
+= Does WhoChanged slow down my site? =
+
+No. WhoChanged only runs in the WordPress admin area (`wp-admin`) and hooks into existing WordPress actions/filters, so it has no impact on your public-facing site’s performance.
+
+= Where is the activity log stored? =
+
+In a dedicated table in your own WordPress database. Activity log data is not sent to any external analytics service. Email alerts (PRO) use your site’s own mail delivery.
+
+= What happens to my data if I deactivate or uninstall the plugin? =
+
+Deactivating keeps all logged data intact so nothing is lost if you reactivate later. Deleting the plugin from the Plugins screen keeps your data by default too — you can opt in to a full data wipe on uninstall from **WhoChanged → Settings → Danger Zone**.
+
+= Is WhoChanged compatible with multisite? =
+
+WhoChanged is designed for single-site installs. Multisite support is on the roadmap.
+
+= Do I need WooCommerce? =
+
+No. WooCommerce is optional. Without it, WhoChanged still tracks core WordPress admin changes (options, Customizer, plugins, users, menus, content). With WooCommerce active, it also logs order deletions.
+
+= How do I upgrade to PRO? =
+
+1. Purchase WhoChanged PRO at https://douple.net/whochanged/#pricing (or from **WhoChanged → Pricing / Upgrade** in wp-admin).
+2. Complete Freemius checkout. Your license key is emailed to the address you used at payment.
+3. In wp-admin go to **WhoChanged → Account**, click **Activate License**, and paste the key.
+4. Confirm **WhoChanged → Settings** shows **PRO Active**.
+
+If you checkout from inside the same site’s wp-admin, Freemius often activates the license automatically. Full guide: https://douple.net/whochanged/docs.html
+
+= I bought PRO but the plugin still shows Free =
+
+Open **WhoChanged → Account** and activate the license key from your Freemius purchase email. If the plan’s site limit is full, deactivate the license on an unused site first, then activate on this one.
+
+= Does this plugin send data to third parties? =
+
+Activity log content stays in your WordPress database. The bundled Freemius SDK may contact Freemius servers only after you opt in to usage tracking, or when you purchase / activate a PRO license. See **External services** below.
+
+= Where is the source code? =
+
+https://github.com/thiendo/Wordpress-WhoChanged-Plugin
+
+== External services ==
+
+This plugin optionally connects to **Freemius** (https://freemius.com/) for:
+
+* Optional opt-in usage tracking (skipped unless you explicitly agree on the Freemius connect screen)
+* PRO checkout, license activation / deactivation, and PRO plugin updates
+
+When those flows run, Freemius may receive data such as site URL, admin email / name (when provided), license key, plugin version, and basic WordPress / PHP environment info needed for licensing and support.
+
+* Freemius Terms of Service: https://freemius.com/terms/
+* Freemius Privacy Policy: https://freemius.com/privacy/
+* Freemius data practices: https://freemius.com/privacy/data-practices/
+
+No Freemius connection is required to use the free activity log features.
 
 == Development ==
 
@@ -66,52 +145,13 @@ Public source repository: [https://github.com/thiendo/Wordpress-WhoChanged-Plugi
 
 No build tools are required to review or modify the plugin-owned admin scripts and styles.
 
-== Installation ==
-
-1. Upload the `whochanged` folder to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the "Plugins" screen in WordPress.
-3. Go to the **WhoChanged** menu in your admin sidebar to view the activity log.
-4. (Optional) Visit **WhoChanged → Settings** to review your 30-day Free retention window, or upgrade to PRO to configure longer retention, email alerts and role-based access.
-5. Full documentation: https://douple.net/whochanged/docs.html
-
-== Frequently Asked Questions ==
-
-= Does WhoChanged slow down my site? =
-
-No. WhoChanged only runs in the WordPress admin area (`wp-admin`) and hooks into existing WordPress actions/filters, so it has no impact on your public-facing site's performance.
-
-= Where is the activity log stored? =
-
-In a dedicated table in your own WordPress database. No data is sent to any external service unless you explicitly configure email alerts (PRO), which use your site's own mail delivery.
-
-= What happens to my data if I deactivate or uninstall the plugin? =
-
-Deactivating the plugin keeps all logged data intact so nothing is lost if you reactivate later. Deleting the plugin from the Plugins screen keeps your data by default too — you can opt in to a full data wipe on uninstall from **WhoChanged → Settings → Danger Zone**.
-
-= Is WhoChanged compatible with multisite? =
-
-WhoChanged is designed for single-site installs. Multisite support is on the roadmap.
-
-= How do I upgrade to PRO? =
-
-1. Purchase WhoChanged PRO at https://douple.net/whochanged/#pricing (or from **WhoChanged → Pricing / Upgrade** in wp-admin).
-2. Complete Freemius checkout. Your license key is emailed to the address you used at payment.
-3. In wp-admin go to **WhoChanged → Account**, click **Activate License**, and paste the key.
-4. Confirm **WhoChanged → Settings** shows **PRO Active**.
-
-If you checkout from inside the same site's wp-admin, Freemius often activates the license automatically. Full guide: https://douple.net/whochanged/docs.html
-
-= I bought PRO but the plugin still shows Free =
-
-Open **WhoChanged → Account** and activate the license key from your Freemius purchase email. If the plan's site limit is full, deactivate the license on an unused site first, then activate on this one.
-
 == Screenshots ==
 
-1. Activity log listing with filters and before/after diffs.
-2. Settings screen with retention, email alerts and role-based access controls (PRO).
-3. Statistics dashboard with charts for actions, users and activity trends.
+1. Activity log listing with filters and expandable before/after diffs for each change.
+2. Settings screen — Free retention overview and PRO controls for retention, email alerts and role-based access.
+3. Statistics dashboard with charts for actions, users, trends and activity by hour of day.
 4. System logs tab for background and non-user events.
-5. Admin bar quick activity menu.
+5. Admin bar quick activity menu — recent changes without leaving the current screen.
 
 == Changelog ==
 
@@ -158,6 +198,9 @@ Open **WhoChanged → Account** and activate the license key from your Freemius 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+Display name and WordPress 7.1 compatibility update. Recommended for all users.
 
 = 1.1.0 =
 Adds Freemius-based licensing, a cleaner uninstall/deactivation flow, and full WordPress coding-standards + i18n compliance. Recommended update for all users.
