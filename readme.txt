@@ -1,11 +1,11 @@
-=== WhoChanged ===
+=== WhoChanged – Admin Activity & Audit Log ===
 Contributors: Douple
 Plugin URI: https://douple.net/whochanged/
 Tags: activity log, audit log, admin log, change tracking, security
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,13 @@ Know exactly who changed what in your WordPress admin — options, Customizer, p
 
 == Description ==
 
-**Plugin URL:** https://douple.net/whochanged/
-**Docs:** https://douple.net/whochanged/docs.html
-**GitHub:** https://github.com/thiendo/Wordpress-WhoChanged-Plugin
+[youtube https://www.youtube.com/watch?v=EyKqCGt5vJQ]
+
+**Plugin URL:** [https://douple.net/whochanged/](https://douple.net/whochanged/)
+**Docs:** [https://douple.net/whochanged/docs.html](https://douple.net/whochanged/docs.html)
+**GitHub:** [https://github.com/thiendo/Wordpress-WhoChanged-Plugin](https://github.com/thiendo/Wordpress-WhoChanged-Plugin)
 **Support:** support@douple.net
-**Get WhoChanged PRO:** https://checkout.freemius.com/plugin/35452/plan/58744/
+**Get WhoChanged PRO:** [https://checkout.freemius.com/plugin/35452/plan/58744/](https://checkout.freemius.com/plugin/35452/plan/58744/)
 
 **WhoChanged** is a lightweight activity log for WordPress that quietly watches the admin area and records every meaningful change: who did it, what changed, and when. When something breaks after an update or a client swears "I didn't touch anything," WhoChanged gives you the answer in seconds instead of hours.
 
@@ -60,7 +62,7 @@ Found a bug or have a feature request? Please reach out through the plugin's sup
 
 Human-readable source for plugin-owned JavaScript and CSS is included in this package under `assets/js/` and `assets/css/` (`admin.js`, `admin-bar.js`, `stats-charts.js`, and matching stylesheets). Third-party libraries under `assets/js/vendor/` and `assets/css/vendor/` ship as upstream distribution builds (Chart.js, Flatpickr).
 
-Public source repository: https://github.com/thiendo/Wordpress-WhoChanged-Plugin
+Public source repository: [https://github.com/thiendo/Wordpress-WhoChanged-Plugin](https://github.com/thiendo/Wordpress-WhoChanged-Plugin)
 
 No build tools are required to review or modify the plugin-owned admin scripts and styles.
 
@@ -107,8 +109,15 @@ Open **WhoChanged → Account** and activate the license key from your Freemius 
 
 1. Activity log listing with filters and before/after diffs.
 2. Settings screen with retention, email alerts and role-based access controls (PRO).
+3. Statistics dashboard with charts for actions, users and activity trends.
+4. System logs tab for background and non-user events.
+5. Admin bar quick activity menu.
 
 == Changelog ==
+
+= 1.1.4 =
+* Updated: Plugin display name to WhoChanged – Admin Activity & Audit Log.
+* Updated: Compatibility tested up to WordPress 7.1.
 
 = 1.1.3 =
 * Compliance: Restored human-readable plugin-owned JavaScript/CSS sources and documented the public repository in the readme.

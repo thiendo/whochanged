@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: WhoChanged
+ * Plugin Name: WhoChanged – Admin Activity & Audit Log
  * Plugin URI: https://douple.net/whochanged/
  * Description: Track critical admin changes including options, Customizer updates, and plugin lifecycle events.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Douple
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WHOCHANGED_VERSION', '1.1.3' );
+define( 'WHOCHANGED_VERSION', '1.1.4' );
 define( 'WHOCHANGED_PLUGIN_FILE', __FILE__ );
 define( 'WHOCHANGED_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WHOCHANGED_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
