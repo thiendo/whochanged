@@ -33,7 +33,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/thiendo/wordpress-whochanged-plugin/main/demo/whochanged-demo.zip"
+				"url": "https://raw.githubusercontent.com/thiendo/whochanged/main/demo/whochanged-demo.zip"
 			},
 			"options": {
 				"activate": true,
@@ -45,7 +45,7 @@
 			"path": "/tmp/whochanged-seed-demo-logs.php",
 			"data": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/thiendo/wordpress-whochanged-plugin/main/demo/seed-demo-logs.php"
+				"url": "https://raw.githubusercontent.com/thiendo/whochanged/main/demo/seed-demo-logs.php"
 			}
 		},
 		{

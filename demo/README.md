@@ -2,7 +2,7 @@
 
 Upload **this entire folder** to a public GitHub repo:
 
-`https://github.com/thiendo/wordpress-whochanged-plugin`
+`https://github.com/thiendo/whochanged`
 
 ## Contents
 
@@ -17,7 +17,7 @@ Upload **this entire folder** to a public GitHub repo:
 ## Test link
 
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/thiendo/wordpress-whochanged-plugin/main/demo/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/thiendo/whochanged/main/demo/blueprint.json
 ```
 
 ## Rebuild zip after code changes

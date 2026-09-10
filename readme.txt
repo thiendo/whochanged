@@ -18,7 +18,7 @@ Know exactly who changed what in your WordPress admin — options, Customizer, p
 **Plugin URL:** [https://douple.net/whochanged/](https://douple.net/whochanged/)
 **Docs:** [https://douple.net/whochanged/docs.html](https://douple.net/whochanged/docs.html)
 **Demo:** [https://douple.net/whochanged/demo.html](https://douple.net/whochanged/demo.html)
-**GitHub:** [https://github.com/thiendo/Wordpress-WhoChanged-Plugin](https://github.com/thiendo/Wordpress-WhoChanged-Plugin)
+**GitHub:** [https://github.com/thiendo/whochanged](https://github.com/thiendo/whochanged)
 **Support:** support@douple.net
 **Get WhoChanged PRO:** [https://checkout.freemius.com/plugin/35452/plan/58744/](https://checkout.freemius.com/plugin/35452/plan/58744/)
 
@@ -120,7 +120,7 @@ Activity log content stays in your WordPress database. The bundled Freemius SDK 
 
 = Where is the source code? =
 
-https://github.com/thiendo/Wordpress-WhoChanged-Plugin
+https://github.com/thiendo/whochanged
 
 == External services ==
 
@@ -141,7 +141,7 @@ No Freemius connection is required to use the free activity log features.
 
 Human-readable source for plugin-owned JavaScript and CSS is included in this package under `assets/js/` and `assets/css/` (`admin.js`, `admin-bar.js`, `stats-charts.js`, and matching stylesheets). Third-party libraries under `assets/js/vendor/` and `assets/css/vendor/` ship as upstream distribution builds (Chart.js, Flatpickr).
 
-Public source repository: [https://github.com/thiendo/Wordpress-WhoChanged-Plugin](https://github.com/thiendo/Wordpress-WhoChanged-Plugin)
+Public source repository: [https://github.com/thiendo/whochanged](https://github.com/thiendo/whochanged)
 
 No build tools are required to review or modify the plugin-owned admin scripts and styles.
 
